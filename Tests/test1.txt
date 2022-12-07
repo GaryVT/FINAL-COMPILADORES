@@ -1,0 +1,25 @@
+## funcion id iz_paren der_paren iz_llave numerico id igual numero pt_coma der_llave
+
+funcion fun1(){
+  numerico x=10;
+  ##cadena c="hola";
+  si(x>20){
+    x=10;
+  }sino{
+    x=11;
+  }
+  
+  
+##si iz_paren EXP COM EXP der_paren iz_llave SENT der_llave,EST -> sino iz_llave SENT der_llave,EST -> mientras iz_paren EXP COM EXP der_paren iz_llave SENT der_llave
+
+}
+
+
+#.
+funcion fun1(){
+  numerico a;
+  a = 2+1.5;
+  numerico b = 4 + 1; 
+  b = "True"+ 2;
+}
+.#

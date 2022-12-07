@@ -1,0 +1,52 @@
+.data 
+   var_x:.word 0:1 
+   var_x:.word 0:1 
+.text 
+main: 
+   li $a0, 1.2
+   la $t0, var_x
+   sw $a0, 0($t0)
+
+   li $a0, 1.2
+   la $t0, var_x
+   sw $a0, 0($t0)
+
+   li $a0, 1.2
+   la $t0, var_x
+   sw $a0, 0($t0)
+
+   la $t0, var_1
+   lw $a0, 0($t0)
+   sw $a0, 0($sp)
+   add $sp, $sp, -4
+   li $a0, 2
+   lw $t1, 4($sp)
+   add $sp, $sp, 4
+   blt $a0, $t1, label_true
+
+label_true:
+   li $a0, 0
+   la $t0, var_1
+    sw $a0, 0($t0)
+label_end:
+   li $a0, 1.2
+   la $t0, var_x
+   sw $a0, 0($t0)
+
+   li $a0, 1.2
+   la $t0, var_x
+   sw $a0, 0($t0)
+
+   li $a0, 1.2
+   la $t0, var_x
+   sw $a0, 0($t0)
+
+   li $a0, 1.2
+   la $t0, var_x
+   sw $a0, 0($t0)
+
+   li $a0, 4
+   la $t0, var_x
+   sw $a0, 0($t0)
+
+	jr $ra

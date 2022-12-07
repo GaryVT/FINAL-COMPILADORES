@@ -1,0 +1,18 @@
+## funcion id iz_paren der_paren iz_llave numerico id igual numero pt_coma id igual id suma numero pt_coma der_llave
+
+funcion fun1(){
+  x = 1;
+  numerico x = 1.2;
+  x = y + 0;
+  si (1 == 2){
+    x = 0;
+  }
+  numerico x = 4;
+}
+
+#.
+funcion fun2(){
+  numerico y = 1.2;
+  y = 0;
+}
+.#
